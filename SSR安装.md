@@ -1,8 +1,9 @@
 输入ssr安装命令，复制下面整段(鼠标右键即可粘贴)
+```
 wget --no-check-certificate https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocksR.sh
 chmod +x shadowsocksR.sh
 ./shadowsocksR.sh 2>&1 | tee shadowsocksR.log
-
+```
 
 
 卸载方法：
@@ -20,5 +21,7 @@ chmod +x shadowsocksR.sh
 代码安装目录：/usr/local/s-s
 
 [安装锐速命令]
+```
 wget -N --no-check-certificate https://github.com/91yun/serverspeeder/raw/master/serverspeeder.sh && bash serverspeeder.sh 
 
+```
