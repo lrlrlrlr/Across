@@ -1,0 +1,65 @@
+atrandys大佬的一键安装脚本
+
+系统要求及脚本介绍
+1、系统>=centos7，用centos8最好，内核可直接开启bbr不需升级。
+
+2、域名解析到VPS并生效。
+
+3、脚本自动续签https证书
+
+4、自动配置伪装网站，位于/usr/share/nginx/html/目录下，可自行替换其中内容
+
+BBR一键安装代码：
+wget --no-check-certificate https://raw.githubusercontent.com/cx9208/Linux-NetSpeed/master/tcp.sh && chmod +x tcp.sh && ./tcp.sh
+
+若报错运行以下代码，不报错跳过：
+yum -y install wget
+rm -f /var/run/yum.pid
+
+./tcp.sh
+
+一、使用一键脚本安装
+curl -O https://raw.githubusercontent.com/atrandys/trojan/master/trojan_centos7.sh && chmod +x trojan_centos7.sh && ./trojan_centos7.sh
+
+如果提示 curl: command not found ，那是因为你的小鸡没装 Curl
+ubuntu/debian 系统安装 Curl 方法: apt-get update -y && apt-get install curl -y
+centos 系统安装 Curl 方法: yum update -y && yum install curl -y
+安装好 curl 之后就能安装脚本了
+
+二、下载Windows客户端
+安装完成后，会展示一条下载地址，复制地址，并下载下来即可。
+
+如果你真的忘记下载了，那么进入/usr/share/nginx/html/目录下，找到一个乱码文件夹，进入会看到客户端文件，使用sftp下载下来即可。
+
+三、搭配浏览器插件使用
+解压缩下载的trojan-cli.zip的压缩包，进入文件夹，双击start.bat，开启Trojan服务，Trojan会监听本地1080端口。然后下载SwitchyOmega
+
+下载插件：SwitchyOmega
+
+规则1：https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt
+规则2：https://raw.githubusercontent.com/atrandys/proV/master/fgfwlist.txt
+
+电脑上其他软件如何使用Trojan
+1、如果软件支持配置socks5，直接指向127.0.0.1：1080即可。
+
+2、如果软件不支持配置socks5，可选择sstap/sockscap64/supercap等软件，通过代理使用。
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
