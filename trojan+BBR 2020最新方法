@@ -19,7 +19,8 @@ rm -f /var/run/yum.pid
 ./tcp.sh
 
 一、使用一键脚本安装
-curl -O https://raw.githubusercontent.com/atrandys/trojan/master/trojan_centos7.sh && chmod +x trojan_centos7.sh && ./trojan_centos7.sh
+curl -O https://raw.githubusercontent.com/vhp8rc7p/trojan/master/trojan_mult.sh && chmod +x trojan_mult.sh && ./trojan_mult.sh
+
 
 如果提示 curl: command not found ，那是因为你的小鸡没装 Curl
 ubuntu/debian 系统安装 Curl 方法: apt-get update -y && apt-get install curl -y
