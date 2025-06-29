@@ -46,6 +46,8 @@
   - 在云服务器上面安装Trojan web管理面板，一键安装:
 
       ```
-      wget -N --no-check-certificate "https://raw.githubusercontent.com/V2RaySSR/Trojan_panel_web/master/trojan-web-panel.sh" && chmod +x trojan-web-panel.sh && ./trojan-web-panel.sh
+      curl -O https://raw.githubusercontent.com/vhp8rc7p/trojan/master/trojan_mult.sh && chmod +x trojan_mult.sh && ./trojan_mult.sh
       ```
+
+      
 4. 使用Trojan-Qt5插件连接云服务器, 翻墙完成!
